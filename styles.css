@@ -9,6 +9,7 @@
             
              :root {
                 --first-color: #ecf0f1;
+                --first-color-active: #95a5a6;
                 --second-color: #2ecc71;
             }
             
@@ -38,6 +39,10 @@
             
             .ml-1 {
                 margin-left: 15px;
+            }
+            
+            .mb-1 {
+                margin-bottom: 15px;
             }
             /* Navigation */
             
@@ -123,7 +128,7 @@
                 background-color: #fff;
                 border-radius: 20px;
                 font-size: 14px;
-                min-width: 280px;
+                min-width: 380px;
                 min-height: 250px;
                 box-shadow: 0px 0px 30px -22px black;
             }
@@ -144,6 +149,11 @@
             .add-item {
                 font-size: 50px;
                 color: var(--first-color);
+                transition: color 0.5s;
+            }
+            
+            .add-item:hover {
+                color: var(--second-color);
             }
             
             .item {
@@ -154,7 +164,7 @@
                 min-width: 350px;
             }
             
-            .item img {
+            .item-img {
                 background-color: var(--second-color);
                 border-radius: 50%;
                 padding: 11px;
@@ -182,4 +192,42 @@
             
             .red {
                 color: red;
+            }
+            /* Report Card */
+            
+            .money-elegant {
+                font-weight: bold;
+                font-size: 23px;
+            }
+            
+            .money-elegant::before {
+                content: '$';
+                font-size: 16px;
+                position: relative;
+                bottom: 6px;
+                right: 3px;
+            }
+            
+            .text-detail {
+                padding-top: 7px;
+                font-size: 13px;
+                font-weight: bold;
+                color: var(--first-color-active);
+            }
+            
+            .item-icon {
+                border-radius: 50%;
+                padding: 11px;
+                width: 48px;
+                font-size: 23px;
+                text-align: center;
+                background-color: white;
+                box-shadow: -3px 4px 10px 3px #dddada;
+            }
+            
+            .report-item {
+                width: 0px;
+                min-width: 160px;
+                margin-right: 23px;
+                margin-bottom: 20px;
             }
