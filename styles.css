@@ -7,6 +7,11 @@
             }
             /* Global Styles */
             
+             :root {
+                --first-color: #ecf0f1;
+                --second-color: #2ecc71;
+            }
+            
             body {
                 color: #000000;
                 font-family: Arial, Helvetica, sans-serif;
@@ -21,9 +26,18 @@
                 color: #000000;
             }
             
-             :root {
-                --first-color: #ecf0f1;
-                --second-color: #2ecc71;
+            h3 {
+                font-weight: normal;
+                font-size: 18px;
+            }
+            
+            .flex-column {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .ml-1 {
+                margin-left: 15px;
             }
             /* Navigation */
             
@@ -79,19 +93,15 @@
                 padding: 40px 50px;
             }
             
-            .flex-column {
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .main-Header {
+            .main-header {
                 grid-column: 1/4;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
             }
+            /* Icons */
             
-            .add-new {
+            .add-icon {
                 font-size: 50px;
                 position: relative;
                 background-color: var(--second-color);
@@ -107,6 +117,7 @@
                 bottom: 6px;
                 font-size: 25px;
             }
+            /* Card */
             
             .card {
                 background-color: #fff;
@@ -114,49 +125,62 @@
                 font-size: 14px;
                 min-width: 280px;
                 min-height: 250px;
+                box-shadow: 0px 0px 30px -22px black;
             }
             
             .card-header {
                 display: flex;
                 justify-content: space-between;
-                padding: 25px 25px 0px 25px;
+                padding: 0px 25px;
                 align-items: center;
             }
             
-            .card-header .add-item {
+            .card-body {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            /* Transaction Card */
+            
+            .add-item {
                 font-size: 50px;
                 color: var(--first-color);
             }
             
-            .card-item {
+            .item {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                margin: 0 auto;
+                padding: 12px 20px;
+                min-width: 300px;
             }
             
-            .card-item img {
-                background-color: blue;
+            .item img {
+                background-color: var(--second-color);
                 border-radius: 50%;
-                padding: 10px;
-                width: 43px;
+                padding: 11px;
+                width: 48px;
             }
             
-            .card-item {
-                padding: 8px 20px;
-            }
-            
-            .card-transaction-detail {
+            .transaction_item {
                 display: flex;
-                min-width: 115px;
-                justify-content: space-between;
                 align-items: center;
             }
             
-            .card-transaction-detail-date {
+            .date {
                 font-size: 10px;
                 padding-top: 3px;
             }
             
-            .card-transaction-money {
-                color: var(--second-color);
+            .money {
+                color: green;
+                font-size: 16px;
+            }
+            
+            .money::before {
+                content: '$';
+            }
+            
+            .red {
+                color: red;
             }
