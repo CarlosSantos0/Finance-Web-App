@@ -47,9 +47,9 @@
             /* Navigation */
             
             header {
-                width: 21%;
+                width: 16%;
                 padding-top: 30px;
-                min-width: 240px;
+                min-width: 260px;
             }
             
             nav>ul {
@@ -60,7 +60,7 @@
             }
             
             nav>ul>li {
-                padding: 17px 50px;
+                padding: 17px 40px;
             }
             
             nav>ul>li:hover {
@@ -90,12 +90,12 @@
             /* Main Content */
             
             main {
-                width: 80%;
+                width: 100vw;
                 background-color: var(--first-color);
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
-                padding: 40px 50px;
+                gap: 40px 20px;
+                padding: 30px 40px;
             }
             
             .main-header {
@@ -230,4 +230,32 @@
                 min-width: 160px;
                 margin-right: 23px;
                 margin-bottom: 20px;
+            }
+            
+            .calendar {
+                padding: 10px 0px;
+                width: 85%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                gap: 25px 20px;
+                text-align: center;
+                font-size: 13px;
+            }
+            
+            .day {
+                color: var(--first-color-active);
+            }
+            
+            .mark-green {
+                display: block;
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                background-color: var(--second-color);
+                margin: 12px auto 0px auto;
+            }
+            
+            .mark-red {
+                background-color: red;
             }
