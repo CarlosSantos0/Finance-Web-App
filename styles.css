@@ -44,6 +44,14 @@
             .mb-1 {
                 margin-bottom: 15px;
             }
+            
+            .bold {
+                font-weight: bold;
+            }
+            
+            .text-green {
+                color: green;
+            }
             /* Navigation */
             
             header {
@@ -90,10 +98,11 @@
             /* Main Content */
             
             main {
-                width: 100vw;
+                width: 95vw;
                 background-color: var(--first-color);
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(4, auto);
                 gap: 40px 20px;
                 padding: 30px 40px;
             }
@@ -196,7 +205,6 @@
             /* Report Card */
             
             .money-elegant {
-                font-weight: bold;
                 font-size: 23px;
             }
             
@@ -232,10 +240,6 @@
                 margin-bottom: 20px;
             }
             
-            .ss {
-                grid-column: 1/3;
-            }
-            
             .calendar {
                 padding: 10px 0px;
                 width: 85%;
@@ -265,10 +269,6 @@
             }
             /* Retirement Card */
             
-            #retirement-card h3 {
-                font-weight: normal;
-            }
-            
             #retirement-card .card-body>* {
                 min-width: 100%;
             }
@@ -276,9 +276,65 @@
             .retirement-item-goal {
                 background-color: rgba(46, 204, 112, 0.30);
                 margin: 0px;
-                padding: 30px;
+                padding: 40px;
             }
             
             .retirement-item-goal h3 {
                 font-size: 35px;
+            }
+            /* Investment Card */
+            
+            #investment-card .card-body>.report-item {
+                width: 50%;
+                padding: 0px;
+                margin: 0px;
+            }
+            
+            #investment-card>.card-body div:first-child {
+                padding-left: 20px;
+                padding-top: 5px;
+            }
+            
+            .investment-performance {
+                width: 100%;
+                padding-right: 40px;
+                margin: 35px auto;
+                font-size: 40px;
+                text-align: center;
+                line-height: 45px;
+            }
+            /* Market Value Card */
+            
+            .market-widget {
+                width: 100%;
+                margin-right: 20px;
+            }
+            /* Budget Card */
+            
+            #budget-card {
+                grid-column: 3/4;
+                grid-row: 3/5;
+            }
+            
+            .budget-title {
+                display: flex;
+                width: 90%;
+                margin: 5px auto;
+                justify-content: space-between;
+            }
+            
+            .budget-title div:last-child {
+                text-align: right;
+            }
+            
+            .line-green {
+                width: 100%;
+                height: 2px;
+                background-color: var(--second-color);
+                margin: 13px 0px;
+            }
+            
+            #budget-card .item {
+                min-width: 100%;
+                margin: 4px 0px;
             }
